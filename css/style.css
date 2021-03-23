@@ -1,0 +1,560 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+.clr{
+    clear: both;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+/*-------------------navbar css part goes here-------------------------*/
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: all linear .4s;
+}
+.bg{
+    background-color: #e84545;
+    animation: bg 2s;
+}
+@keyframes{
+    form{top:-70px;}
+    to{top:0;}
+}
+.menu-main{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 270px;
+}
+.logo img{
+    padding-top: 38px;
+}
+.menu{
+    width: 900px;
+    text-align: right;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a {
+    padding-left: 60px;
+    line-height: 92px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.bg .menu ul li a {
+    line-height: 50px; 
+    transition: all linear .4s;
+
+}
+.bg .logo img{
+    padding-top: 18px;
+    transition: all linear .4s;
+}
+/*-------------------navbar css part end here-------------------------*/
+/*-------------------banner css part goes here-------------------------*/
+.banner-img{
+    position: relative;
+    background-image: url(../images/banner.jpg);
+    padding-top: 256px;
+    padding-bottom: 520px;
+    width: 100%;
+}
+.banner-overlay{
+    position: absolute;
+    background-color: rgba(43, 46, 74,.95);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.banner-text{
+    text-align: center;
+}
+.banner-text h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 65px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 246px 45px 0 45px;
+}
+.banner-text p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #ffffff;
+    padding: 14px 110px 86px 110px;
+    line-height: 33px;
+}
+.banner-text a{
+    padding: 19px 46px 18px 54px;
+    background-color: #e84545;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+/*-------------------banner css part end here-------------------------*/
+/*-------------------service css part goes here-------------------------*/
+.service-main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 121px;
+    padding-bottom: 49px;
+}
+.service-item{
+    width: 344px;
+    text-align: center;
+    margin-bottom: 72px;
+}
+.service-item img{
+    width: 60px;
+    height: 60px;
+}
+.service-item h5{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #2d3033;
+    text-transform: uppercase;
+    padding-top: 28px;
+}
+.service-item p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #6c7279;
+    line-height: 21px;
+    padding-top: 18px;
+}
+
+/*-------------------service css part end here-------------------------*/
+/*-------------------extra css part goes here-------------------------*/
+#vid{
+    padding-bottom: 50px;
+}
+.video-text{
+    text-align: center;
+}
+.video-text h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #2d3033;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+.video-text p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #2d3033;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+
+.vid-img{
+    width: 640px;
+    height: 426px;
+    margin: 0 auto;
+    position: relative;
+}
+.vid-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   background-color: rgba(43, 46, 74,.80);
+   display: flex;
+   justify-content: center;
+}
+.vid-overlay i{
+    align-items: center;
+    line-height: 426px;
+    font-size: 50px;
+    color: #F63D3A;
+}
+#count{
+    background-color: #F63D3A;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 80px;
+}
+.count-main{
+    display: flex;
+    justify-content: space-between;
+}
+.count-item{
+    text-align: center;
+}
+.count-item h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+.count-item p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+/*-------------------extra css part end here-------------------------*/
+/*-------------------gallrey css part goes here-------------------------*/
+.gallrey-main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallrey-item{
+    width: 25%;
+    position: relative;
+    margin-bottom: -3px;
+}
+.gal-overlay{
+    position: absolute;
+    background-color: rgba(232, 69, 69,.90);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98.5%;
+    display: flex;
+    justify-content: center;
+    transition:  all linear .4s;
+    opacity: 0;
+}
+.gal-overlay:hover {
+    opacity: 1;
+}
+.gal-text{
+    text-align: center;
+    align-self: center;
+}
+.gal-text h6{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+    padding-bottom: 10PX;
+    text-transform: uppercase;
+}
+.gal-text p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffffff;
+}
+.gal-text i{
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/*-------------------gallrey css part end here-------------------------*/
+/*-------------------team css part goes here-------------------------*/
+.team-main{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 101px;
+}
+.team-item{
+    width: 270px;
+}
+.team-item h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #2d3033;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+.team-item h6{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #e84545;
+    padding-top: 8px;
+    text-transform: uppercase;
+}
+.team-item p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #6c7279;
+    padding-top: 25px;
+}
+.team-icon{
+    padding-top: 25px;
+}
+.team-icon i{
+    border: 1px solid #e8ecee;
+    padding: 11px 16px;
+    color: #c6cacc;
+    font-size: 18px;
+}
+/*-------------------team css part end here-------------------------*/
+/*-------------------design css part goes here-------------------------*/
+.design-main{
+    position: relative;
+    display: flex;
+}
+.design1{
+    width: 50%;
+    margin-bottom: -4px;
+}
+.design2{
+    width: 50%;
+    background-color: #53354a;
+}
+
+.design2 h6{
+    font-family: 'Cardo', serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 36px;
+    color: #ffffff;
+    padding: 60px 80px 0 85px;/*-----------here pt-107px-------------*/
+    line-height: 42px;
+}
+.design2 p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: #ffffff;
+    padding: 28px 0 0 85px;
+}
+.ceryle{
+    position: absolute;
+    left: 69%;
+    bottom: 69px; /*------ here need to pt-64px-------*/
+}
+.ceryle ul li{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #755d6e;
+    border-radius: 12px;
+    transition: all linear .4s;
+}
+.ceryle ul li:hover{
+    background-color: #ffffff;
+}
+/*-------------------design css part end here-------------------------*/
+/*-------------------intro css part goes here-------------------------*/
+.intro{
+    text-align: center;
+    padding-top: 96px;
+    padding-bottom: 115px;
+}
+.intro h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    color: #2d3033;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+.intro h6{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: #2d3033;
+    text-transform: uppercase;
+    padding-bottom: 52px;
+}
+.intro a{
+    padding: 14px 81px 14px 81px;
+    background-color: #e84545;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+/*-------------------intro css part end here-------------------------*/
+/*-------------------footer css part goes here-------------------------*/
+#footer{
+    background-color: #3a3e64;
+    padding-top: 70px;
+    padding-bottom: 87px;
+}
+.footer-main{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-item{
+    width: 335px;
+    text-align: center;
+}
+.footer-item3{
+    width: 341px;
+    text-align: center;
+}
+.footer-item h5{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.footer-item p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding: 0 80px;
+    line-height: 22.5px;
+    padding-top: 12px;
+}
+.footer-icon{
+    padding-top: 12px;
+}
+.footer-icon i{
+    border: 2px solid #e8ecee;
+    padding: 11px 16px;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 3px;
+}
+.footer-item3 h5{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.footer-item3 p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: capitalize;
+    line-height: 22.5px;
+    padding-top: 12px;
+}
+/*-------------------footer css part end here-------------------------*/
+/*-------------------copyright css part goes here-------------------------*/
+#copyright{
+    background-color: #313454;
+    text-align: center;
+    height: 94px;
+}
+#copyright h6{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #808080;
+    text-transform: capitalize;
+    padding-top: 25px;
+    padding-bottom: 7px;
+}
+#copyright p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #808080;
+    text-transform: capitalize;
+}
+#copyright span{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+#copyright i{
+    color: #e84545;
+    font-size: 14px;
+    margin: 0 3px 0 3px;
+}
+/*-------------------copyright css part end here-------------------------*/
+/*-------------------back-to-top css part goes here-------------------------*/
+.back-to-top{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 999;
+    display: none;
+}
+.back-to-top i{
+    width: 50px;
+    height: 50px;
+    background-color:#E84545;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+    font-size: 20px;
+    transition: all linear .4s;
+}
+.back-to-top  i:hover{
+    background-color:#3A3E64;
+    color: #E84545;
+    box-shadow: 1px 1px 10px 1px rgba(2, 2, 2, 0.84);
+    -webkit-box-shadow: 1px 1px 10px 1px rgba(12, 11, 12, 0.84);
+    -moz-box-shadow: 1px 1px 10px 1px rgba(8, 8, 8, 0.84);
+}
+/*-------------------back-to-top css part end here-------------------------*/
+/*-------------------preloder css part goes here-------------------------*/
+.preloder{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #3A3E64;
+    z-index: 99999;
+}
+.load{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    /*change these sizes to fit into your project*/
+    width:100px;
+    height:100px;
+  }
+  .load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}
+  
+  .load :first-child{background:#19A68C;animation-delay:-1.5s}
+  .load :nth-child(2){background:#F63D3A;animation-delay:-1s}
+  .load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
+  .load :last-child{background:#193B48}
+  
+  @keyframes spin{
+    0%,100%{transform:translate(0)}
+    25%{transform:translate(160%)}
+    50%{transform:translate(160%, 160%)}
+    75%{transform:translate(0, 160%)}
+  }
+/*-------------------preloder css part end here-------------------------*/
+/*-------------------back-top-button css part goes here-------------------------*/
+
+/*-------------------back-top-button css part end here-------------------------*/
+/*-------------------back-top-button css part goes here-------------------------*/
+
+/*-------------------back-top-button css part end here-------------------------*/
+/*-------------------back-top-button css part goes here-------------------------*/
+
+/*-------------------back-top-button css part end here-------------------------*/
